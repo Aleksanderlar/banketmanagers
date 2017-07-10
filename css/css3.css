@@ -1,0 +1,322 @@
+@font-face {
+    font-family: Lobster;
+    src: url('/fonts/Lobster.ttf');
+}
+
+* {
+    outline: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+.breadcrumb {
+    background: none;
+    font-size: 12px;
+
+}
+
+.breadcrumb a {
+    color: #7e7e7e;
+    text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "|\00a0";
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services td, .dishes-grid td {
+    padding: 5px;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+    display: none;
+
+}
+
+.disabled {
+    opacity: 0.4 !important;
+}
+
+.services h3 {
+    font-family: Lobster, Verdana, sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    box-shadow: inset 0px 2px 3px 2px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.dishes-grid label:before {
+    left: auto;
+    right: 10px;
+}
+
+label:before {
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 255, 0, .2);
+    color: #6AB619;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+}
+
+.banket-divider {
+    background: url("/images/backBanketDishes.png");
+    width: 100%;
+    height: 11px;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+    font-family: Lobster, Verdana, sans-serif;
+    letter-spacing: 1px;
+    margin: 3px;
+}
+
+.btn-warning {
+    background: linear-gradient(to bottom, #FABF00, #F7AA00);
+    box-shadow: 0 2px 2px #BC804A;
+}
+
+.btn-danger {
+    background: linear-gradient(to bottom, #F75D3A, #ED2D2B);
+    box-shadow: 0 2px 2px #B90F0E;
+}
+
+.filters {
+    background: #fae069;
+    padding: 5px;
+    text-align: center;
+}
+
+.filters h5 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.filters h5 img {
+    margin-top: -5px;
+}
+
+.countMans {
+    position: relative;
+}
+
+.countMansText {
+    width: 50px;
+}
+
+.fill {
+    background: #8CBA5B;
+    height: 7px;
+    position: absolute;
+    border-radius: 7px 0 0 7px;
+}
+
+.range {
+    -webkit-appearance: none;
+    height: 7px;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-image: url("/images/range.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.range::-moz-range-track {
+    -webkit-appearance: none;
+    height: 7px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    background-image: url("/images/range.png");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.drobs {
+    margin: -5px 0 0;
+    font-size: 10px;
+}
+
+.drobsCount {
+    margin: 0 -10px 0 -3px;
+}
+
+.priceMan {
+    background: url("/images/backPrice.png");
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.timeBanket {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.weight {
+    background: #8DBA5D;
+    color: #ffffff;
+    padding: 2px 5px;
+}
+
+.dishes {
+    border-left: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    padding-bottom: 5px;
+    height: 225px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.dishes ul {
+    list-style: none;
+}
+
+.dishes ul li {
+    padding: 2px 0;
+}
+
+.dishes h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.priceBanket {
+    background-color: #8CBA5B;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.priceBanket .btn-warning {
+    margin-top: -15px;
+}
+
+.priceBanket .price {
+    font-size: 24px;
+    font-family: Lobster, Verdana, sans-serif;
+}
+
+.purse {
+    font-size: 15px;
+}
+
+.purse img {
+    margin: -10px 5px 0 0;
+}
+
+.recommend {
+    background-color: #8CBA5B;
+    font-family: Lobster, Verdana, sans-serif;
+    color: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.range-bar {
+    position: relative;
+}
+
+.range-bar .fill {
+    position: absolute;
+    top: 0;
+}
+
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel-indicators li {
+    border: none;
+    background-color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #8CB338;
+}
+
+.dishes-grid td {
+    padding: 5px;
+    height: 100%;
+    position: relative;
+}
+
+.dishes-grid td label {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.dishes-grid td label + img {
+    cursor: pointer;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+#add {
+    float: right;
+}
+.dish-footer p{
+    color: #8CBA5B;
+    font-size: 30px;
+    font-family:Lobster, Verdana, sans-serif ;
+}
