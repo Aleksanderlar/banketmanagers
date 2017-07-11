@@ -228,9 +228,3 @@ p {
     color: #000;
     text-decoration: none;
 }
-
-.menus {
-    max-height: 870px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
