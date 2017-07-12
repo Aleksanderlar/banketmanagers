@@ -2,9 +2,16 @@ $(document).ready(function () {
 
     $(document).on('input', '.range', function () {
         $(this).parent().parent().find(".countMansText").val($(this).val());
+        var width = ($(this).width() - 20) * $(this).val() / $(this).attr("max");
         $(this).parent().parent().find(".fill").css({
-            "width": ($(this).width() - 20) * $(this).val() / $(this).attr("max")
+            "width": width
         });
+        if (width < 3) {
+            $(this).parent().parent().find(".fill").addClass("hidden");
+        }
+        else {
+            $(this).parent().parent().find(".fill").removeClass("hidden");
+        }
     });
 
     $(".fill").each(function () {

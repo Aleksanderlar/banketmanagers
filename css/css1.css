@@ -72,6 +72,15 @@ p {
     border-radius: 7px 0 0 7px;
 }
 
+.fill:after {
+    content: '';
+    position: absolute;
+    background: url("../images/fillRange.png") no-repeat;
+    right: -2px;
+    width: 3px;
+    height: 7px;
+}
+
 .range {
     -webkit-appearance: none;
     height: 7px;
@@ -227,4 +236,14 @@ p {
 .link {
     color: #000;
     text-decoration: none;
+}
+
+.dishes select {
+    margin: 0 0 0 15px;
+    width: 100%;
+    height: 100%;
+}
+.dishes select option{
+    padding:5px;
+    margin-right: 15px;
 }
