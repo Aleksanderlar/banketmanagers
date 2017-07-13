@@ -1,4 +1,6 @@
-
+#wrapper{
+	min-width: 410px;
+}
 #wrapper .d-carousel ul li {
 	background: none;
 }
