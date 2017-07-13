@@ -243,7 +243,12 @@ p {
     width: 100%;
     height: 100%;
 }
-.dishes select option{
-    padding:5px;
+
+.dishes select option {
+    padding: 5px;
     margin-right: 15px;
+}
+
+.jcarousel-next-disabled, .jcarousel-prev-disabled {
+    display: none !important;
 }

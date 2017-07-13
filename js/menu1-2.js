@@ -1,9 +1,13 @@
 $(document).ready(function () {
 
+    var minWidth = 300;
+    $("ul.carousel").width("");
+    var ww = $("ul.carousel").width();
     $("#wrapper .d-carousel ul li").each(function () {
-        $(this).width(($(".d-carousel").width() - 35) / 3);
+        var liw = $(".d-carousel").width() / Math.floor(ww / minWidth) - 10;
+        if (liw < minWidth) liw = minWidth;
+        $(this).width(liw);
     });
-
     $("ul.carousel").width(9999);
     $(".d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal").each(function () {
         $(this).css({"top": $("#wrapper").height() / 2});
@@ -34,4 +38,8 @@ $(document).ready(function () {
         });
 
     });
+
+    function log(log) {
+        console.log(log);
+    }
 });
