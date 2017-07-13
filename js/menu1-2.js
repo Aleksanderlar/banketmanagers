@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("ul.carousel").width("");
     var ww = $("ul.carousel").width();
     $("#wrapper .d-carousel ul li").each(function () {
-        var liw = $(".d-carousel").width() / Math.floor(ww / minWidth) - 10;
+        var liw = $(".d-carousel").width() / Math.floor(ww / minWidth)-10;
         if (liw < minWidth) liw = minWidth;
         $(this).width(liw);
     });
