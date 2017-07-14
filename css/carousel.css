@@ -27,7 +27,7 @@
 
 .d-carousel .jcarousel-next-horizontal {
     position: absolute;
-    top: 149px;
+    top: 49%;
     right: 0;
     margin-right: 3px;
     width: 15px;
@@ -48,7 +48,7 @@
 
 .d-carousel .jcarousel-prev-horizontal {
     position: absolute;
-    top: 149px;
+    top: 49%;
     left: 0;
     margin-left: 3px;
     width: 15px;
