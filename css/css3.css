@@ -114,7 +114,6 @@ alpha(opacity = 30);
     display: inline-flex;
 }
 
-
 .carousel .item img {
     width: 100%;
 }
@@ -126,4 +125,43 @@ alpha(opacity = 30);
 
 .carousel-indicators .active {
     background-color: #8CB338;
+}
+
+.services div {
+    padding: 10px;
+}
+
+.services div img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    /*xxs*/
+    .services div {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 401px)  and (max-width: 767px) {
+    /*xs*/
+    .services div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    /*md*/
+    .services div {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*lg*/
+    .services div {
+        width: 110px;
+    }
 }

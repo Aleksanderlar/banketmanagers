@@ -1,75 +1,112 @@
-#wrapper{
-	min-width: 410px;
-}
+
 #wrapper .d-carousel ul li {
-	background: none;
+    background: none;
 }
 
 .jcarousel-direction-rtl {
-	direction: rtl;
+    direction: rtl;
 }
 
 .d-carousel h4 {
-	margin: 5px 0 5px 0;
+    margin: 5px 0 5px 0;
 }
 
 .d-carousel .jcarousel-container {
-	display: block;
-	overflow: hidden;
-	margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-
-.d-carousel .jcarousel-item {
-	width: 190px;
-}
-
 .d-carousel .jcarousel-container-horizontal {
     margin: 0 -15px;
     padding: 0 20px;
 }
 
 .d-carousel .jcarousel-item-horizontal {
-	padding: 3px;
+    padding: 3px;
 }
 
 .d-carousel .jcarousel-next-horizontal {
-	position: absolute;
-	top: 149px;
-	right: 0;
-	margin-right: 3px;
-	width: 15px;
-	height: 28px;
-	cursor: pointer;
-	background: transparent url(../images/blog-arrows.jpg) no-repeat top right;
+    position: absolute;
+    top: 149px;
+    right: 0;
+    margin-right: 3px;
+    width: 15px;
+    height: 28px;
+    cursor: pointer;
+    background: transparent url(../images/blog-arrows.jpg) no-repeat top right;
 }
 
 .d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
-	left: 5px;
-	right: auto;
-	background-image: url(../images/blog-arrows.jpg);
+    left: 5px;
+    right: auto;
+    background-image: url(../images/blog-arrows.jpg);
 }
 
 .d-carousel .jcarousel-next-horizontal:hover {
-	background-position: bottom right;
+    background-position: bottom right;
 }
 
 .d-carousel .jcarousel-prev-horizontal {
-	position: absolute;
-	top: 149px;
-	left: 0;
-	margin-left: 3px;
-	width: 15px;
-	height: 28px;
-	cursor: pointer;
-	background: transparent url(../images/blog-arrows.jpg) no-repeat top left;
+    position: absolute;
+    top: 149px;
+    left: 0;
+    margin-left: 3px;
+    width: 15px;
+    height: 28px;
+    cursor: pointer;
+    background: transparent url(../images/blog-arrows.jpg) no-repeat top left;
 }
 
 .d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
-	left: auto;
-	right: 5px;
-	background-image: url(../images/blog-arrows.jpg);
+    left: auto;
+    right: 5px;
+    background-image: url(../images/blog-arrows.jpg);
 }
 
 .d-carousel .jcarousel-prev-horizontal:hover {
-	background-position: bottom left;
+    background-position: bottom left;
+}
+
+@media (max-width: 500px) {
+    /*xxs*/
+    .d-carousel .jcarousel-item {
+        width: 310px;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+}
+
+@media (min-width: 501px)  and (max-width: 767px) {
+    /*xs*/
+    .d-carousel .jcarousel-item {
+        width: 450px;
+    }
+
+    .container {
+        width: 490px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*sm*/
+    .d-carousel .jcarousel-item {
+        width: 355px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*md*/
+    .d-carousel .jcarousel-item {
+        width: 310px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*lg*/
+    .d-carousel .jcarousel-item {
+        width: 376px;
+    }
 }
