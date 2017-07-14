@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     var minWidth = 300;
+    $("ul.carousel").width("");
     var ww = $("ul.carousel").width();
     $("#wrapper .d-carousel ul li").each(function () {
         var liw = $(".d-carousel").width() / Math.floor(ww / minWidth)-10;
