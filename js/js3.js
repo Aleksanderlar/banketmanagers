@@ -57,4 +57,16 @@ $(document).ready(function () {
             imgThumb.parent().find("input[type='checkbox']").prop("checked", block.find("#addCheck").prop("checked"));
         });
     });
+
+    var minWidth = 100;
+    var ww = $(".services").width();
+    $(".services div").each(function () {
+        var columns = ww / minWidth;
+        var divw = 0;
+        if (columns >= 6) divw = ww / 6;
+        else if (columns >= 3) divw = ww / 3;
+        else if (columns >= 2) divw = ww / 2;
+        else divw = ww;
+        $(this).width(divw - 10);
+    });
 });
