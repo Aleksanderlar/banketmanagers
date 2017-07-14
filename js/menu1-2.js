@@ -1,18 +1,5 @@
 $(document).ready(function () {
 
-   /* var minWidth = 300;
-    $("ul.carousel").width("");
-    var ww = $("ul.carousel").width();
-    $("#wrapper .d-carousel ul li").each(function () {
-        var liw = $(".d-carousel").width() / Math.floor(ww / minWidth)-10;
-        if (liw < minWidth) liw = minWidth;
-        console.log(liw);
-        $(this).width(liw-3);
-    });
-    $("ul.carousel").width(9999);*/
-    $(".d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal").each(function () {
-        $(this).css({"top": $("#wrapper").height() / 2});
-    });
     $(document).on('input', '.range', function () {
         $(this).parent().parent().find(".countMansText").val($(this).val());
         var width = ($(this).width() - 20) * $(this).val() / $(this).attr("max");
