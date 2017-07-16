@@ -18,16 +18,17 @@ $(document).ready(function () {
         widthFill($(this));
     });
 
-    $(document).on('input', '.countMansText', function () {
-        $(this).parent().parent().find(".range").val($(this).val());
-        widthFill($(this).parent().parent().find(".fill"));
-    });
-
     function widthFill(fill) {
         fill.css({
             "width": (fill.parent().find(".range").width() - 20) * fill.parent().find(".range").val() / fill.parent().find(".range").attr("max")
         });
     }
+
+    $(document).on('input', '.countMansText', function () {
+        $(this).parent().parent().find(".range").val($(this).val());
+        widthFill($(this).parent().parent().find(".fill"));
+    });
+
 
     $(".dishes-grid img").click(function () {
         var imgThumb = $(this);

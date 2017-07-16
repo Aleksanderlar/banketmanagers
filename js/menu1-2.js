@@ -15,10 +15,10 @@ $(document).ready(function () {
     });
 
     $(".fill").each(function () {
-        $(this).css({
-            "width": ($(this).parent().find(".range").width() - 20) * $(this).parent().find(".range").val() / $(this).parent().find(".range").attr("max")
-        });
+        widthFill($(this));
     });
+
+
     $(document).on('input', '.countMansText', function () {
         $(this).parent().parent().find(".range").val($(this).val());
         $(this).parent().parent().find(".fill").css({
@@ -26,9 +26,25 @@ $(document).ready(function () {
         });
 
     });
-
-    function log(log) {
-        console.log(log);
-    }
-
 });
+
+
+$j15(document).ready(function () {
+    $(function () {
+        $j15("#container").clickCarousel({margin: 5});
+        $(window).resize(function () {
+            $(".fill").each(function () {
+                widthFill($(this));
+            });
+        });
+    });
+});
+
+function log(log) {
+    console.log(log);
+}
+function widthFill(fill) {
+    fill.css({
+        "width": (fill.parent().find(".range").width() - 20) * fill.parent().find(".range").val() / fill.parent().find(".range").attr("max")
+    });
+}

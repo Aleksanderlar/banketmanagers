@@ -26,3 +26,22 @@
 .action img {
     width: 100%;
 }
+
+
+#container{
+    height:910px !important;
+}
+
+@media (max-width: 500px) {
+    /*xxs*/
+    #container {
+        height: 960px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*md*/
+    #container {
+        height: 960px !important;
+    }
+}

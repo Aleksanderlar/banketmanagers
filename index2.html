@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css1.css">
-    <link rel="stylesheet" href="css/css2.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/css2.css">
 
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.5.min.js"></script>
@@ -14,7 +14,7 @@
     </script>
 
     <script type="text/javascript" src="js/menu1-2.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/click-carousel.js"></script>
 </head>
 <body>
 <div class="container">
@@ -23,630 +23,631 @@
     <!-- Begin Wrapper -->
     <div id="wrapper">
 
-        <div class="d-carousel">
-            <ul class="carousel">
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+        <div id="container">
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №2</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №3</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №4</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №5</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <div class="menu">
-                            <h4>Меню<br>&laquo;У друзей&raquo; №1</h4>
-                            <div class="filters">
-                                <h5>
-                                    <img src="images/quest2.png"/>
-                                    Количество гостей</h5>
-                                <div class="col-md-12 countMans clearfix">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="30" max="200"
-                                               min="0"> человек
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="200" value="30">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">200</span>
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <p class="priceMan clearfix ">
-                                    <span class="col-md-6">3500 руб/чел</span>
-                                    <span class="col-md-6">1000 г/чел</span>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <form action="" method="post">
+                    <div class="menu">
+                        <h4>Меню<br>&laquo;У друзей&raquo; №6</h4>
+                        <div class="filters">
+                            <h5>
+                                <img src="images/quest2.png"/>
+                                Количество гостей</h5>
+                            <div class="col-md-12 countMans clearfix">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="30" max="200"
+                                           min="0"> человек
                                 </p>
-                                <h5><img src="images/time.png"> Длительность банкета</h5>
-                                <div class="col-md-12">
-                                    <p class="text-center">
-                                        <input type="number" class="countMansText text-center" value="6" max="24"
-                                               min="0"> ч
-                                    </p>
-                                    <div class="fill"></div>
-                                    <p>
-                                        <input class="range" type="range" min="0" max="24" value="6">
-                                    </p>
-                                    <p class="clearfix drobs">
-                                        <span class="pull-left">|</span>
-                                        <span class="pull-right">|</span>
-                                    </p>
-                                    <p class="clearfix drobsCount">
-                                        <span class="pull-left">0</span>
-                                        <span class="pull-right">24</span>
-                                    </p>
-                                </div>
-                                <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
-                                <button class="btn btn-warning">Подробнее</button>
-                            </div>
-                            <div class="action">
-                                <img src="images/action.jpg">
-                            </div>
-                            <div class="dishes">
-                                <select class="row" multiple>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                    <option>Джермук с газом</option>
-                                    <option>Лимонад</option>
-                                    <option>Компот домашний</option>
-                                </select>
-                                <div class="banket-divider"></div>
-                                <h4><img src="images/dish.png"> Банкетные блюда</h4>
-                                <ul class="row">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox"/>Стерлядь по-царски <span
-                                                class="recommend">Рекомендуем!</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="priceBanket text-center">
+                                <div class="fill"></div>
                                 <p>
-                                    <button class="btn btn-warning">Выбрать</button>
+                                    <input class="range" type="range" min="0" max="200" value="30">
                                 </p>
-                                <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
-                                <p class="price">123 050 руб.</p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">200</span>
+                                </p>
                             </div>
-                            <p class="row text-center">
+                            <div class="clearfix"></div>
+                            <p class="priceMan clearfix ">
+                                <span class="col-md-6">3500 руб/чел</span>
+                                <span class="col-md-6">1000 г/чел</span>
+                            </p>
+                            <h5><img src="images/time.png"> Длительность банкета</h5>
+                            <div class="col-md-12">
+                                <p class="text-center">
+                                    <input type="number" class="countMansText text-center" value="6" max="24"
+                                           min="0"> ч
+                                </p>
+                                <div class="fill"></div>
+                                <p>
+                                    <input class="range" type="range" min="0" max="24" value="6">
+                                </p>
+                                <p class="clearfix drobs">
+                                    <span class="pull-left">|</span>
+                                    <span class="pull-right">|</span>
+                                </p>
+                                <p class="clearfix drobsCount">
+                                    <span class="pull-left">0</span>
+                                    <span class="pull-right">24</span>
+                                </p>
+                            </div>
+                            <p>Рекомендуемое кол-во еды на гостя <span class="weight">800</span> <span>г</span></p>
+                            <button class="btn btn-warning">Подробнее</button>
+                        </div>
+                        <div class="action">
+                            <img src="images/action.jpg">
+                        </div>
+                        <div class="dishes">
+                            <select class="row" multiple>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                                <option>Джермук с газом</option>
+                                <option>Лимонад</option>
+                                <option>Компот домашний</option>
+                            </select>
+                            <div class="banket-divider"></div>
+                            <h4><img src="images/dish.png"> Банкетные блюда</h4>
+                            <ul class="row">
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox"/>Стерлядь по-царски <span
+                                            class="recommend">Рекомендуем!</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBanket text-center">
+                            <p>
+                                <button class="btn btn-warning">Выбрать</button>
+                            </p>
+                            <p class="purse text-uppercase"><img src="images/purse.png">Стоимость банкета</p>
+                            <p class="price">123 050 руб.</p>
+                        </div>
+                        <p class="row text-center">
                                 <span class="col-md-6"><a href="" class="link"><img
                                         src="images/download.png"> Скачать</a></span>
-                                <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
-                            </p>
-                            <p class="col-md-12 text-center">
-                                <button class="btn btn-danger">Заказать</button>
-                                <button class="btn btn-warning">Узнать Вашу скидку</button>
-                            </p>
-                        </div>
-                    </form>
-                </li>
-            </ul>
+                            <span class="col-md-6"><a href="" class="link"><img src="images/print.png"> Распечатать</a></span>
+                        </p>
+                        <p class="col-md-12 text-center">
+                            <button class="btn btn-danger">Заказать</button>
+                            <button class="btn btn-warning">Узнать Вашу скидку</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="clear"></div>
+        <div id="carouselLeft"></div>
+        <div id="carouselRight"></div>
     </div>
+    <div class="clearfix"></div>
+
 
     <!-- End Wrapper -->
 
