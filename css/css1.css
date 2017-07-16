@@ -264,3 +264,16 @@ p {
 input[type=checkbox] {
     margin-right: 5px;
 }
+
+.font-weight-bold {
+    font-weight: 700;
+}
+.font-weight-normal {
+    font-weight: 400;
+}
+.font-italic {
+    font-style: italic;
+}
+.text-underline {
+    text-decoration: underline;
+}

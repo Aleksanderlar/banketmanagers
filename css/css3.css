@@ -58,6 +58,10 @@
     right: 5px;
 }
 
+.countMansText {
+    border: 1px solid #c0c0c0;
+}
+
 .checkboxes label:before {
     border-radius: 3px;
 }
@@ -88,12 +92,12 @@
     cursor: pointer;
 }
 
-.checkboxes input[type=checkbox]:checked + label + img {
+.checkboxes input[type=checkbox]:checked + label + img, .opacity-off {
     opacity: 1;
 alpha(opacity = 100);
 }
 
-.checkboxes input[type=checkbox] + label + img {
+.checkboxes input[type=checkbox] + label + img, .opacity-on {
     opacity: 0.3;
 alpha(opacity = 30);
 }
@@ -137,6 +141,20 @@ alpha(opacity = 30);
     margin: 0 auto;
 }
 
+.dish-footer p {
+    color: #8CBA5B;
+    font-size: 30px;
+    font-family: Lobster, Verdana, sans-serif;
+}
+
+.servicesTitle, .modal-title {
+    font-family: Lobster, Verdana, sans-serif;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+
 @media (max-width: 400px) {
     /*xxs*/
     .services div {
@@ -164,4 +182,18 @@ alpha(opacity = 30);
     .services div {
         width: 110px;
     }
+}
+
+#dishBlock {
+    font-family: Lato, Verdana, sans-serif !important;
+}
+
+.dishes .dish {
+    padding: 5px;
+}
+
+.dish > div {
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    margin-top: -10px;
 }

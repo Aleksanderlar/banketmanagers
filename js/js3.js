@@ -59,4 +59,23 @@ $(document).ready(function () {
         });
     });
 
+    $(".dishes").each(function () {
+        $(this).on('input', '.range', function () {
+            $(this).parent().parent().parent().find(".countMansText").val($(this).val());
+            $(this).parent().parent().parent().find(".fill").css({
+                "width": ($(this).width() - 20) * $(this).val() / $(this).attr("max")
+            });
+        });
+
+        $(this).on('input', '.countMansText', function () {
+            $(this).parent().parent().parent().find(".range").val($(this).val());
+            widthFill($(this).parent().parent().parent().find(".fill"));
+        });
+    });
+
+    $(".dishes input[type=checkbox]").click(function () {
+        var prop = $(this).prop("checked");
+        if(!prop) $(this).parent().parent().find("div:first").addClass("opacity-on");
+        else $(this).parent().parent().find("div:first").removeClass("opacity-on");
+    });
 });

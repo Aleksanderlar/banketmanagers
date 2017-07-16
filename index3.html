@@ -205,8 +205,8 @@
             </tr>
         </table>
         <div class="col-xs-12">
-            <h3>Дополнительные услуги</h3>
-            <div class="services ">
+            <h3 class="servicesTitle">Дополнительные услуги</h3>
+            <div class="services">
                 <div>
                     <p>
                         <input id="tamada" type="checkbox" checked name="tamada">
@@ -326,32 +326,146 @@
             </p>
             <p><a href="" class="link link-more">Посмотреть подробнее</a></p>
         </div>
-        <div class="dishes">
-            <select class="row" multiple>
-                <option>Джермук с газом</option>
-                <option>Лимонад</option>
-                <option>Компот домашний</option>
-                <option>Джермук с газом</option>
-                <option>Лимонад</option>
-                <option>Компот домашний</option>
-                <option>Джермук с газом</option>
-                <option>Лимонад</option>
-                <option>Компот домашний</option>
-            </select>
-            <div class="banket-divider"></div>
-            <h4><img src="images/dish.png"> Банкетные блюда</h4>
-            <ul class="row">
-                <li>
-                    <label>
-                        <input type="checkbox"/>Поросенок с яблоками <span class="recommend">Рекомендуем!</span>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox"/>Стерлядь по-царски <span class="recommend">Рекомендуем!</span>
-                    </label>
-                </li>
-            </ul>
+        <div class="dishes checkboxes">
+            <div class="dish">
+                <p class="dishTitle">
+                    <input type="checkbox" checked id="dishesDish1">
+                    <label for="dishesDish1">Овощное ассорти</label>
+                </p>
+                <div>
+                    <p>Общий вес блюда: <span class="weight">1500</span> г</p>
+                    <div class="countGrams row">
+                        <div class="col-md-3">
+                            <p>Порция</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="fill"></div>
+                            <p>
+                                <input class="range" type="range" min="0" max="200" value="40">
+                            </p>
+
+                            <p class="clearfix drobs">
+                                <span class="pull-left">|</span>
+                                <span class="pull-right">|</span>
+                            </p>
+                            <p class="clearfix drobsCount">
+                                <span class="pull-left">0</span>
+                                <span class="pull-right">200</span>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-center">
+                                <input type="number" class="countMansText text-center" value="40" max="200" min="0"> г/чел
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish">
+                <p class="dishTitle">
+                    <input type="checkbox" checked id="dishesDish2">
+                    <label for="dishesDish2">Овощное ассорти</label>
+                </p>
+                <div>
+                    <p>Общий вес блюда: <span class="weight">1500</span> г</p>
+                    <div class="countGrams row">
+                        <div class="col-md-3">
+                            <p>Порция</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="fill"></div>
+                            <p>
+                                <input class="range" type="range" min="0" max="200" value="40">
+                            </p>
+
+                            <p class="clearfix drobs">
+                                <span class="pull-left">|</span>
+                                <span class="pull-right">|</span>
+                            </p>
+                            <p class="clearfix drobsCount">
+                                <span class="pull-left">0</span>
+                                <span class="pull-right">200</span>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-center">
+                                <input type="number" class="countMansText text-center" value="40" max="200" min="0"> г/чел
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish">
+                <p class="dishTitle">
+                    <input type="checkbox" checked id="dishesDish3">
+                    <label for="dishesDish3">Овощное ассорти</label>
+                </p>
+                <div>
+                    <p>Общий вес блюда: <span class="weight">1500</span> г</p>
+                    <div class="countGrams row">
+                        <div class="col-md-3">
+                            <p>Порция</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="fill"></div>
+                            <p>
+                                <input class="range" type="range" min="0" max="200" value="40">
+                            </p>
+
+                            <p class="clearfix drobs">
+                                <span class="pull-left">|</span>
+                                <span class="pull-right">|</span>
+                            </p>
+                            <p class="clearfix drobsCount">
+                                <span class="pull-left">0</span>
+                                <span class="pull-right">200</span>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-center">
+                                <input type="number" class="countMansText text-center" value="40" max="200" min="0"> г/чел
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish">
+                <p class="dishTitle">
+                    <input type="checkbox" checked id="dishesDish4">
+                    <label for="dishesDish4">Овощное ассорти</label>
+                </p>
+                <div>
+                    <p>Общий вес блюда: <span class="weight">1500</span> г</p>
+                    <div class="countGrams row">
+                        <div class="col-md-3">
+                            <p>Порция</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="fill"></div>
+                            <p>
+                                <input class="range" type="range" min="0" max="200" value="40">
+                            </p>
+
+                            <p class="clearfix drobs">
+                                <span class="pull-left">|</span>
+                                <span class="pull-right">|</span>
+                            </p>
+                            <p class="clearfix drobsCount">
+                                <span class="pull-left">0</span>
+                                <span class="pull-right">200</span>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="text-center">
+                                <input type="number" class="countMansText text-center" value="40" max="200" min="0"> г/чел
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="priceBanket text-center">
             <p>
@@ -374,6 +488,68 @@
         </p>
     </div>
 </div>
+<div id="dishBlock" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="title"></h4>
+            </div>
+            <div class="modal-body">
+                <p><img id="img" class="img-responsive"></p>
+                <div id="add" class="checkboxes pull-right">
+                    <input type="checkbox" id="addCheck" checked>
+                    <label for="addCheck">Добавить</label>
+                </div>
+                <h4 class="font-weight-bold">Описание</h4>
+                <p id="description"></p>
+                <p class="banket-divider"></p>
+                <p><span class="font-weight-bold">Общий вес блюда:</span> <span class="weight">1500 г</span></p>
 
+                <div class="countGrams row">
+                    <div class="col-md-3">
+                        <p class="font-weight-bold">Порция</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="fill"></div>
+                        <p>
+                            <input class="range" type="range" min="0" max="200" value="40">
+                        </p>
+
+                        <p class="clearfix drobs">
+                            <span class="pull-left">|</span>
+                            <span class="pull-right">|</span>
+                        </p>
+                        <p class="clearfix drobsCount">
+                            <span class="pull-left">0</span>
+                            <span class="pull-right">200</span>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="text-center">
+                            <input type="number" class="countMansText text-center" value="40" max="200" min="0"> г/чел
+                        </p>
+                    </div>
+                </div>
+                <p class="clearfix"></p>
+                <p class="banket-divider"></p>
+                <div class="dish-footer clearfix text-center">
+                    <div class="col-xs-4">
+                        <h5 class="font-weight-bold">Сумма на человека</h5>
+                        <p>1400 руб.</p>
+                    </div>
+                    <div class="col-xs-4">
+                        <h5 class="font-weight-bold">Всего гр на человека</h5>
+                        <p>2000 г</p>
+                    </div>
+                    <div class="col-xs-4">
+                        <h5 class="font-weight-bold">Общая сумма банкета</h5>
+                        <p>123456 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
