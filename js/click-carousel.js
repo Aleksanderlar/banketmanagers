@@ -228,12 +228,12 @@ function isset(obj) {
                 }
 
                 //If the container is not animated
-                if (container.animating === false) {
+                /*if (container.animating === false) {
                     //The container is now animating.
                     container.animating = true;
 
                     //Hide the clicked element's target
-                    /*jQuery(clicked).slideUp(settings.hideSpeed, function () {
+                    jQuery(clicked).slideUp(settings.hideSpeed, function () {
                         //Take the clicked element's target and add it to the end of the array
                         //Also shift the clicker in order to keep settings.shifting and settings.clicker consistent.
                         settings.shifting = settings.shifting.arrayShift(index, "last");
@@ -247,8 +247,8 @@ function isset(obj) {
                             //The container has finished animating
                             container.animating = false;
                         });
-                    });*/
-                }
+                    });
+                }*/
             });
         }
 

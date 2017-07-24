@@ -2,7 +2,7 @@
     /*xxs*/
     #container {
         width: 270px;
-        height: 900px !important;
+        height: 940px !important;
     }
 
     .container {
@@ -45,7 +45,7 @@
     /*md*/
     #container {
         width: 890px;
-        height: 900px !important;
+        height: 920px !important;
     }
 
     #container .item {
@@ -71,7 +71,7 @@
 
 #container {
     position: relative;
-    height: 850px;
+    height: 880px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -79,7 +79,6 @@
 #container .item {
     position: absolute;
     top: 0;
-    cursor: pointer;
     overflow: hidden;
 }
 

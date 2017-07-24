@@ -73,53 +73,6 @@ p {
     width: 50px;
 }
 
-.fill {
-    background: #8CBA5B;
-    height: 7px;
-    position: absolute;
-    border-radius: 7px 0 0 7px;
-}
-
-.fill:after {
-    content: '';
-    position: absolute;
-    background: url("../images/fillRange.png") no-repeat;
-    right: -2px;
-    width: 3px;
-    height: 7px;
-}
-
-.range {
-    -webkit-appearance: none;
-    height: 7px;
-    background-color: #000000;
-    cursor: pointer;
-    border-radius: 7px;
-}
-
-.range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-image: url("../images/range.png");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-}
-
-.range::-moz-range-track {
-    -webkit-appearance: none;
-    height: 7px;
-    background-color: #000000;
-    cursor: pointer;
-}
-
-.range::-moz-range-thumb {
-    background-image: url("../images/range.png");
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-}
-
 .drobs {
     margin: -5px 0 0;
     font-size: 10px;
@@ -208,24 +161,16 @@ p {
     height: 11px;
 }
 
-.range-bar {
-    position: relative;
-}
-
-.range-bar .fill {
-    position: absolute;
-    top: 0;
-}
-
 .btn {
-    font-family: Lobster, Verdana, sans-serif;
+    font-family: Lobster, Verdana, sans-serif !important;
     letter-spacing: 1px;
     margin: 3px;
 }
 
 .btn-warning {
-    background: linear-gradient(to bottom, #FABF00, #F7AA00);
-    box-shadow: 0 2px 2px #BC804A;
+    background: linear-gradient(to bottom, #FABF00, #F7AA00) !important;
+    box-shadow: 0 2px 2px #BC804A !important;
+    border: none !important;
 }
 
 .btn-danger {
@@ -276,4 +221,21 @@ input[type=checkbox] {
 }
 .text-underline {
     text-decoration: underline;
+}
+
+.ws-range .ws-range-progress {
+    background: #8CBA5B !important;
+}
+span.ws-input{
+    background: #000;
+    border-radius: 10px;
+}
+.ws-range .ws-range-progress{
+    border-radius: 10px ;
+}
+.ws-range .ws-range-thumb, .ws-range.ws-focus .ws-range-thumb {
+    background: url("../images/range.png");
+    width: 20px;
+    height: 20px;
+    border: none;
 }

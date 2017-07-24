@@ -1,0 +1,95 @@
+@media (max-width: 500px) {
+    /*xxs*/
+    .col-md-4 #container {
+        width: 270px;
+        height: 900px !important;
+    }
+
+    .col-md-4 .container {
+        width: 350px;
+    }
+
+    .col-md-4 #container .item {
+        width: 270px;
+    }
+
+}
+
+@media (min-width: 501px)  and (max-width: 767px) {
+    /*xs*/
+    .col-md-4 #container {
+        width: 410px;
+    }
+
+    .col-md-4 .container {
+        width: 490px;
+    }
+
+    .col-md-4 #container .item {
+        width: 410px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*sm*/
+    .col-md-4 #container {
+        width: 670px;
+    }
+
+    .col-md-4 #container .item {
+        width: 332px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /*md*/
+    .col-md-4 #container {
+        width: 890px;
+        height: 900px !important;
+    }
+
+    .col-md-4 #container .item {
+        width: 293px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*lg*/
+    .col-md-4 #container {
+        width: 350px;
+    }
+
+    .col-md-4 #container .item {
+        width: 350px;
+    }
+}
+
+#carouselRight {
+    left: -20px;
+}
+
+#carouselLeft {
+    right: -20px;
+}
+
+.calendar {
+    margin-top: 60px;
+}
+
+.ws-po-box {
+    border: none;
+    background: #fae069;
+}
+
+.input-picker .picker-list, .input-picker .picker-list td > button {
+    background: none;
+}
+.btn::before{
+    color: green;
+}
+.input-picker .ws-button-row{
+    border: none;
+}
+.input-picker .picker-list td > button.checked-value{
+    background: #8CBA5B;
+}

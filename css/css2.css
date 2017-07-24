@@ -29,13 +29,13 @@
 
 
 #container{
-    height:910px !important;
+    height:950px !important;
 }
 
 @media (max-width: 500px) {
     /*xxs*/
     #container {
-        height: 960px !important;
+        height: 980px !important;
     }
 }
 
