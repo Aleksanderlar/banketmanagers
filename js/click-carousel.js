@@ -200,6 +200,11 @@ function isset(obj) {
             jQuery(settings.shifting).fakeFloat();
         });
 
+        jQuery.fn.reloadClickCarousel = function () {
+            jQuery(settings.shifting).fakeFloat();
+        };
+
+
         //Check to see if the click-trigger is the same as what's being shifted.
         //Must be checked in this scope since settings.shifting undergoes
         //Array manipulation, thus rendering the equality test illogical after the first run.
@@ -229,26 +234,26 @@ function isset(obj) {
 
                 //If the container is not animated
                 /*if (container.animating === false) {
-                    //The container is now animating.
-                    container.animating = true;
+                 //The container is now animating.
+                 container.animating = true;
 
-                    //Hide the clicked element's target
-                    jQuery(clicked).slideUp(settings.hideSpeed, function () {
-                        //Take the clicked element's target and add it to the end of the array
-                        //Also shift the clicker in order to keep settings.shifting and settings.clicker consistent.
-                        settings.shifting = settings.shifting.arrayShift(index, "last");
-                        settings.clicker = settings.clicker.arrayShift(index, "last");
+                 //Hide the clicked element's target
+                 jQuery(clicked).slideUp(settings.hideSpeed, function () {
+                 //Take the clicked element's target and add it to the end of the array
+                 //Also shift the clicker in order to keep settings.shifting and settings.clicker consistent.
+                 settings.shifting = settings.shifting.arrayShift(index, "last");
+                 settings.clicker = settings.clicker.arrayShift(index, "last");
 
-                        //Move and Align the Elements
-                        jQuery(settings.shifting).fakeFloat({speed: settings.shiftSpeed});
+                 //Move and Align the Elements
+                 jQuery(settings.shifting).fakeFloat({speed: settings.shiftSpeed});
 
-                        //Reveal the element on the other side
-                        jQuery(clicked).show(0, function () {
-                            //The container has finished animating
-                            container.animating = false;
-                        });
-                    });
-                }*/
+                 //Reveal the element on the other side
+                 jQuery(clicked).show(0, function () {
+                 //The container has finished animating
+                 container.animating = false;
+                 });
+                 });
+                 }*/
             });
         }
 

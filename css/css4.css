@@ -84,12 +84,20 @@
 .input-picker .picker-list, .input-picker .picker-list td > button {
     background: none;
 }
-.btn::before{
+
+.btn::before {
     color: green;
 }
-.input-picker .ws-button-row{
+
+.input-picker .ws-button-row {
     border: none;
 }
-.input-picker .picker-list td > button.checked-value{
+
+.input-picker .picker-list td > button.checked-value {
     background: #8CBA5B;
+}
+
+#showHideGroup .btn {
+    font-size: 12px;
+    height: 35px;
 }
