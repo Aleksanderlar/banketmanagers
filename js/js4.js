@@ -11,8 +11,8 @@ $(document).ready(function () {
     setInterval(function () {
         $(document).find(".picker-grid button[class*= 'day-'], .ws-current, #hide-calendar").click(function () {
             setTimeout(function () {
-                $("#calendar").addClass("hidden").removeClass("col-md-8");
-                $("#menus").removeClass("col-md-4");
+                $("#calendar").addClass("hidden").removeClass("col-md-4");
+                $("#menus").removeClass("col-md-8");
                 $("#container").reloadClickCarousel();
                 //setClicker();
             }, 250);
@@ -20,8 +20,8 @@ $(document).ready(function () {
     }, 250);
 
     $("#show-calendar").click(function () {
-        $("#calendar").removeClass("hidden").addClass("col-md-8");
-        $("#menus").addClass("col-md-4");
+        $("#calendar").removeClass("hidden").addClass("col-md-4");
+        $("#menus").addClass("col-md-8");
         $("#container").reloadClickCarousel();
 
     });
