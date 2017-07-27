@@ -42,7 +42,9 @@
         display: flex;
         justify-content: center;
     }
-
+    .index-calendar-months {
+        height: 290px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
