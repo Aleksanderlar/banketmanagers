@@ -4,18 +4,16 @@ $(document).ready(function () {
 
         if ($(document).find(".picker-grid button").length > 0) {
             clearInterval(interval);
-            //    setClicker();
         }
     }, 250);
 
     setInterval(function () {
-        $(document).find(".picker-grid button[class*= 'day-'], .ws-current, #hide-calendar").click(function () {
+        $(document).find(".index-calendar-month td.day:not('.disabled'), #hide-calendar").click(function () {
             setTimeout(function () {
                 $("#calendar").addClass("hidden").removeClass("col-md-4");
                 $("#menus").removeClass("col-md-8");
                 $("#container").reloadClickCarousel();
-                //setClicker();
-            }, 250);
+            }, 300);
         });
     }, 250);
 
@@ -23,7 +21,6 @@ $(document).ready(function () {
         $("#calendar").removeClass("hidden").addClass("col-md-4");
         $("#menus").addClass("col-md-8");
         $("#container").reloadClickCarousel();
-
     });
 });
 

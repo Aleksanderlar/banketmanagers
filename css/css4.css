@@ -6,6 +6,14 @@
     #carouselRight {
         left: 0 !important;
     }
+
+    .index-calendar-months {
+        height: 290px !important;
+    }
+
+    .trip-control-wrap {
+        padding-right: 260px !important;
+    }
 }
 
 @media (min-width: 501px)  and (max-width: 767px) {
@@ -20,6 +28,10 @@
 
     .col-md-8 #container .item {
         width: 450px;
+    }
+
+    .index-calendar-months {
+        height: 290px !important;
     }
 }
 
@@ -47,6 +59,10 @@
         width: 50%;
         float: left;
     }
+
+    .trip-control-wrap {
+        padding-right: 300px !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -58,6 +74,10 @@
 
     .col-md-8 #container .item {
         width: 310px;
+    }
+
+    .trip-control-wrap {
+        padding-right: 270px !important;
     }
 }
 
@@ -84,24 +104,34 @@
     margin-top: 60px;
 }
 
-.ws-po-box {
-    border: none;
+.trip-control-wrap {
     background: #fae069;
+    padding-right: 324px;
+    color: black;
 }
 
-.input-picker .picker-list, .input-picker .picker-list td > button {
-    background: none;
+.flight-index-form .index-calendar {
+    background: #fae069;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute !important;
+    overflow: hidden;
 }
 
-.btn::before {
-    color: green;
+.index-calendar .index-calendar-header td, .index-calendar .day span, .index-calendar .index-calendar-month, .index-calendar .day.d1 span {
+    color: #000000;
 }
 
-.input-picker .ws-button-row {
-    border: none;
+.index-calendar .index-calendar-arrow:hover svg {
+    stroke: #fae069;
 }
 
-.input-picker .picker-list td > button.checked-value {
+.index-calendar .index-calendar-month, .index-calendar .day span:hover , .index-calendar .day.d1:hover span {
+    border-color: #8CBA5B;
+}
+
+.index-calendar .index-calendar-arrow, .index-calendar .day.cd0 span {
     background: #8CBA5B;
 }
 
@@ -118,6 +148,9 @@
     padding: 0;
 }
 
-.ws-inline-picker {
-    margin: 0 auto;
+.flight-index-form {
+    padding: 0 10px;
+}
+.flight-index-form *{
+    transform: none !important;
 }

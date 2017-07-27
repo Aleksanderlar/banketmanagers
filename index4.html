@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/css4.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+    <script src="js/vendor.js"></script>
     <script type="text/javascript" src="js/click-carousel.js"></script>
     <script type="text/javascript" src="js/polyfiller.js"></script>
-    <script type="text/javascript" src="js/calendar.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
     <script type="text/javascript" src="js/js4.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -537,13 +537,14 @@
 
     </div>
 
-    <div id="calendar" class="col-md-4">
-        <form action="#" class="ws-validate calendar">
-            <div class="form-row">
-                <input type="date" class="hide-replaced hidden"/>
+    <div id="calendar" class="col-md-4 ">
+        <form class="flight-index-form index-form calendar" id="flight-index-form">
+            <div class="trip-control-wrap">
+                <div id="index-calendar" class="index-calendar"></div>
             </div>
         </form>
     </div>
+
     <!-- End Wrapper -->
     <div class="clearfix"></div>
 
@@ -559,5 +560,17 @@
             ответственности за нашу деятельность.</p>
     </div>
 </div>
+<script>
+    window.SVGListRaw = {
+        CalendarArrowUp: "<svg data-name=\"CalendarArrowUp\" viewBox=\"0 0 44 13\" width=\"44\" height=\"13\"><path d=\"M 0,12 L 22,1 44,12\" \/><\/svg>",
+        CalendarArrowDown: "<svg data-name=\"CalendarArrowDown\" viewBox=\"0 0 44 13\" width=\"44\" height=\"13\"><path d=\"M 0,0 L 22,11 44,0\" \/><\/svg>"
+    };
+    window.now = new Date();
+</script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<script>
+    window.a = new Controller({});
+</script>
+
 </body>
 </html>
